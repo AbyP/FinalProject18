@@ -2,7 +2,12 @@ user_name = input("Hello human, what is your characters name that will travel wi
 print(f"{user_name} welcome! You will be playing an adventure game, and if you succeed, at the game you will know the identity of the mysterious person.")
 user_readiness = input("Are you ready to begin, if so we will start off with some basic instructions ")
 print("Well whatever you said, you're still here to now we shall begin.")
-
+print(" ")
+print("So, the computer will randomly generate a person from the magnet 2020 junior class")
+print("Well, that seems like a lot of work, so I'll narrow it down, you will have to find the identity of a yearbook member in the mhs 2020 junior class")
+print("As you go through the game you will have opportunities to battle opponents and earn extra clues.")
+print("The goal is to figure out the person before you die.")
+print(" ")
 
 class Character:
   """Generic character class"""
