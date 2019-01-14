@@ -25,6 +25,9 @@ class Character:
   def fight(self, Opponent):
     while Opponent.Hp >= 1:
       Opponent.Hp = Opponent.Hp - self.atk
+    while self.Hp >= 1:
+      self.Hp = self.Hp - Opponent.atk
+      print(f"After the attack by {Opponent.name}, the attacker, {self.name}, now has {self.Hp} health")
       print(f"After the attack by {self.name}, the opponent, {Opponent.name}, now has {Opponent.Hp} health")
 
 
@@ -45,10 +48,12 @@ class Opponent(Character):
 
 
 
-Alex = Player('Alex', 34, 23, 45, 21)
+Alex = Player('Alex', 84, 23, 45, 21)
 Blob = Opponent('Andrew', 56, 19, 23, 43)
 Ace = Opponent('Ace', 88, 17, 5, 0)
 Zuboomafu = Opponent('Zuboomafu', 123, 56, 87, 13)
 Momo = Opponent('Momo', 84, 72, 36, 57)
 
-Alex.fight(Ace)
+challenge_one = input("You have come across your first opponent, if you win you will be rewarded with the gender of the mystery person.")
+if challenge_one == 'yes':
+    Alex.fight(Ace)
