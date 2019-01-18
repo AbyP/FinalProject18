@@ -1,25 +1,28 @@
-yearbook_member_list = ['Anna', 'Abigail', 'Beatriz', 'Nicole', 'Andrew', 'Sara', 'Julia', 'Dexter', 'Kelley', 'Isabella', 'Matthew']
+import random
 
-class yearbook_member : #definition of class called human
+yearbook_member_list = ['Anna', 'Abigail', 'Beatriz', 'Nicole', 'Andrew', 'Kelley', 'Isabella', 'Matthew']
+
+class mystery_member: #definition of class called yearbook_member
   """yearbook member class"""
 
-def __init__(self, name, age, gender, hobby, birthday, extra):
+  def __init__(mystery_member, name, gender, hobby, birthday, extra):
     """constructor for yearbook member class"""
-    self.name = name
-    self.age = age
-    self.gender = gender
-    self.hobby = hobby
-    self.birthday = birthday
-    self.extra = extra
+    mystery_member.name = name
+    mystery_member.gender = gender
+    mystery_member.hobby = hobby
+    mystery_member.birthday = birthday
+    mystery_member.extra = extra
 
-Anna = yearbook_member('Anna', '16', 'girl', 'reading', 'May 28', 'glasses')
-Abigail = yearbook_member('Abigail', '17', 'girl', 'volleyball', 'January 11', 'dog lover')
-Beatriz = yearbook_member('Beatriz', '16', 'girl', 'sleeping', 'March 14', 'marvel movies')
-Nicole = yearbook_member('Nicole', '16', 'girl', 'swimming ', 'July 2', 'polish')
-Sara = yearbook_member('Sara', '16', 'girl', ' ', ' ')
-Andrew = yearbook_member('Andrew', '16', 'boy', ' ', ' ', 'robotics')
-Julia = yearbook_member('Julia', '16', 'girl', ' ', ' ')
-Dexter = yearbook_member('Dexter', '16', 'guy', ' ', ' ')
-Kelley = yearbook_member('Kelley', '16', 'girl', 'eating ', 'March 7', 'Asian')
-Isabella = yearbook_member('Isabella', '17', 'girl', 'skiing ', 'December 22', 'tall')
-Matthew = yearbook_member('Matthew', '16', 'guy', '')
+Anna = mystery_member('Anna', 'girl', 'reading', 'May 28', 'glasses')
+Abigail = mystery_member('Abigail', 'girl', 'volleyball', 'January 11', 'dog lover')
+Beatriz = mystery_member('Beatriz', 'girl', 'sleeping', 'March 14', 'art')
+Nicole = mystery_member('Nicole', 'girl', 'swimming ', 'July 2', 'polish')
+Andrew = mystery_member('Andrew', 'boy', 'football', 'May 19', 'robotics')
+Kelley = mystery_member('Kelley', 'girl', 'eating ', 'March 7', 'Asian')
+Isabella = mystery_member('Isabella', 'girl', 'skiing ', 'December 22', 'tall')
+Matthew = mystery_member('Matthew', 'guy', 'video games', 'July', 'watches football')
+
+mystery_member = random.choice(yearbook_member_list)
+
+print(mystery_member)
+print(Isabella.hobby)
