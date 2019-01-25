@@ -9,3 +9,7 @@
  Link to presentation:
  
   https://docs.google.com/presentation/d/1Q4--LjZDGbTwhzjS3GG82xm5qLuB1yTwRHhMsHirlEI/edit#slide=id.g4dbe1d4691_0_297
+
+Link to flow chart:
+
+  https://drive.google.com/file/d/1pTz5h5O4P4f6TTEdunVIlo7vxYDZyn3Y/view?usp=sharing
